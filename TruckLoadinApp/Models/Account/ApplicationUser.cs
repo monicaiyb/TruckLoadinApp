@@ -5,6 +5,7 @@ namespace TruckLoadinApp.Models.Account
 {
     public class ApplicationUser
     {
+        [Required(ErrorMessage = "Email is required")]
         public string? Email { get; set; }
         public string? Password { get; set; }
 
