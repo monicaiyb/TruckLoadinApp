@@ -10,8 +10,7 @@ string connectionString = builder.Configuration.GetConnectionString("DefaultConn
 builder.Services.AddDbContextPool<TruckLoadingContextDb>(options =>
 options.UseSqlServer(connectionString));
 
-//builder.Services.AddDbContextPool<TruckLoadingContextDb>(options =>
-//    options.UseSqlServer("DefaultConnection"));
+
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
