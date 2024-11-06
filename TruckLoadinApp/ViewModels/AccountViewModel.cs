@@ -17,7 +17,7 @@ namespace TruckLoadinApp.ViewModels
 
         public void LoadUsers(TruckLoadingContextDb context)
         {
-            
+
             Users = context.ApplicationUser.ToList();
             if (!string.IsNullOrEmpty(SearchTerm))
             {
